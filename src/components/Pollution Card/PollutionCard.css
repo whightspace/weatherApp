@@ -1,0 +1,60 @@
+.pollutionCard {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-around;
+    gap: 16px;
+}
+
+.pollMiniCard {
+    background-color: azure;
+    border-radius: 16px;
+    box-shadow: 0 0 16px 0 white;
+    padding: 16px;
+    width: 30%;
+    min-width: 45px;
+    max-height: 45px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+/* .pollutionCard .col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+} */
+
+.pollMiniCard .txt {
+    font-size: 24px;
+    font-weight: 500;
+    color: darkslategray
+}
+
+.pollMiniCard .val {
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.pollMiniCard .units{
+    font-size: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .pollutionCard{
+        gap: 8px;
+    }
+
+    .pollMiniCard{
+        padding: 8px;
+    }
+    .pollMiniCard .txt{
+        font-size: 18px;
+    }
+    .pollMiniCard .val{
+        font-size: 10px;
+    }
+    .pollMiniCard .units{
+        font-size: 6px;
+    }
+}

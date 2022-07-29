@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #d1f0ff;
+    background-image: url("https://www.transparenttextures.com/patterns/fresh-snow.png");
+
+}
+
+header {
+    background-image: linear-gradient(to bottom right, #1CB7FF, #00A3F1);
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 black;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 48px;
+    padding: 0 16px 0 0;
+}
+
+header div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 16px;
+    color: gray;
+    font-weight: 600;
+  }
+  
+.content {
+    margin: 32px;
+    border-radius: 16px;
+    background-color: #001d33;
+    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+    box-shadow: 0 0 10px 0 black;
+    display: grid;
+    grid-template-areas: 
+    'curr poll'
+    'fore fore';
+    grid-template-columns: 5.5fr 4.4fr;
+    padding: 16px;
+    gap: 16px;
+}
+
+.currentCard {
+    grid-area: curr;
+}
+.pollutionCard {
+    grid-area: poll;
+}
+.forecastCard {
+    grid-area: fore;
+}
+
+.Card {
+    background-color: #002F46;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    footer{
+        font-size: 8px;
+    }
+    header {
+        font-size: 20px;
+        padding: 10px 8px;
+    }
+    header img {
+        width: 24px;
+        padding: 0 8px 0 0;
+    }
+    header .dt{
+        font-size: 12px;
+    }
+
+    .content {
+        margin: 16px 8px;
+        padding: 8px;
+        gap: 8px;
+    }
+    
+    .Card{
+        padding: 8px;
+    }
+
+
+}

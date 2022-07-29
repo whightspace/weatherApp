@@ -1,0 +1,12 @@
+.forecastCard {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+    .forecastCard {
+        gap: 8px;
+    }
+}

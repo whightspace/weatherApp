@@ -1,0 +1,128 @@
+.currentCard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.currentCard .rows {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+    justify-content: space-evenly;
+}
+
+.currentCard .heading {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.currentCard .miniCard {
+    background-color: lightgrey;
+    box-shadow: 0 0 16px 0 white;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    min-width: 65px;
+}
+
+.currentCard .miniCard img {
+    width: 48px;
+}
+
+.currentCard .miniCard .txt {
+    white-space: nowrap;
+    font-weight: 600;
+    padding-top: 8px;
+    text-align: center;
+}
+
+.currentCard .miniCard .miniTxt{
+    color: darkslategray;
+}
+
+.currentCard .miniCard .miniVal{
+    font-size: 20px;
+}
+
+.weatherCard {
+    background-color: lightblue;
+    border-radius: 16px;
+    box-shadow: 0 0 16px 0 white;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 42.2%;
+}
+
+.weatherCard .miniVal {
+    font-size: 48px;
+    font-weight: 100;
+    color: darkslategray;
+    padding: 0 16px;
+}
+
+.utc {
+    grid-area: utc;
+    background-color: lightsteelblue;
+    border-radius: 16px;
+    box-shadow: 0 0 16px 0 white;
+    color: darkslategray;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .currentCard{
+        gap: 16px;
+    }
+    .currentCard .rows{
+        gap: 8px;
+    }
+    .currentCard .heading{
+        gap: 8px;
+    }
+    .weatherCard{
+        padding: 8px;
+    }
+    .weatherCard .miniVal{
+        font-size: 20px;
+        padding: 0 2px;
+    }
+    .weatherCard .miniIcon{
+        width: 24px;
+    }
+
+    .utc{
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .currentCard .miniCard{
+        padding: 8px;
+    }
+    .currentCard .miniCard img{
+        width: 24px;
+    }
+    .currentCard .miniCard .txt{
+        padding-top: 4px;
+    }
+    .currentCard .miniCard .miniTxt{
+        font-size: 10px;
+    }
+    .currentCard .miniCard .miniVal{
+        font-size: 10px;
+    }
+}
